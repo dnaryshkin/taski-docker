@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm npm run build
+RUN npm run build
 
 CMD ["npx", "-y", "http-server", "-p", "8080", "/app/build"]
